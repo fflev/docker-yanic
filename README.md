@@ -13,7 +13,7 @@ Example docker command:
 docker run --network host \
   -v $(pwd)/config:/config \
   -v $(pwd)/data:/data\
-  fkae/yanic:latest
+  ghcr.io/fflev/yanic:latest
 ```
 
 An example minimal `config.toml` and `compose.yaml` for use with Docker Compose
