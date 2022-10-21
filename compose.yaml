@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  yanic:
+    image: 'ghcr.io/fflev/yanic:latest'
+    restart: unless-stopped
+    volumes:
+      - './data:/data'
+      - './config:/config'
+    network_mode: host

@@ -1,0 +1,25 @@
+[respondd]
+enable = true
+synchronize = "1m"
+collect_interval = "1m"
+
+[[respondd.interfaces]]
+ifname = "mesh-lev"
+
+[nodes]
+state_path = "/data/state.json"
+prune_after = "7d"
+save_interval = "5s"
+offline_after = "10m"
+
+[[nodes.output.meshviewer-ffrgb]]
+enable = true
+path = "/data/meshviewer.json"
+
+[[nodes.output.nodelist]]
+enable = true
+path = "/data/nodelist.json"
+
+[database]
+delete_after = "7d"
+delete_interval = "1h"
